@@ -275,6 +275,10 @@ footer {
 .topnav {
   background-color: #B07156;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  z-index: 500;
 }
 
 /* Style the links inside the navigation bar */
