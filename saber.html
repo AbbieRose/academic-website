@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sabermetrics</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .row {
+      width: 100%;
+      text-align: center;
+    }
+
+    .block {
+      width: 25px;
+      display: inline-block;
+      }​
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Sabermetrics</h1>
+    <img src="images/yankees-celebrating.jpg" style="height:300px;border-radius:50%" alt="(AlpacaML UI)"/>
+  </div>
+</div>
+
+
+<div class="container-fluid bg-3 text-left">
+  <h3>Why Sabermetrics?</h3><br>
+  <p>Legend has it that Sabermetrics began as a way to settle bar fights about baseball. One of the fathers of Sabermetrics described it as “the search for objective knowledge about baseball.” Long-time sabermetrician Phil Birenbaum (date) writes that “Sabermetrics is a science, which means that it follows the scientific method. Conclusions must be based on evidence and logic, and any conclusions can be re-evaluated or overturned if new, contradictory, evidence turns up.” This logic is often statistics-based, and increasingly computation-based as this science gains popularity and resources among baseball teams, sports networks, and superfans.</p>
+  <p>I investigated an interdisciplinary undergraduate special topics Sabermetrics class to determine (1) in what ways the students practice and discuss computation and statistics (2) how the class environments support these practices.</p>
+  <p> Note: In this post, I use a variety of baseball and Sabermetrics terms that the casual reader may not know. For an explainer, scroll to the bottom.</p>
+</div>
+
+<div class="container-fluid bg-3 text-left">
+  <h3>Study Design</h3><br>
+  <p>In the class I worked with, students learned the history of Sabermetrics, worked with common public datasets, learned about modern player-performance metrics, and used the tools they learned to work on larger baseball-related projects. The class met three times a week, and I attended each time to collect field notes. I obtained informed consent from the instructor, and about two thirds of the students in the class. While I observed the entire class, I only focused my analysis on the students who had consented, and I only stored data collected from students who had consented. I collected pre- and post-participation surveys from the students to determine students' interests, attitude and enjoyment of computing, statistics and baseball. I analyzed my field notes, student assignments, and survey results to determine student and instructor practices as they related to probabilistic language, argumentation tools, and use of statistics, mathematical modeling and programming practices.</p>
+</div>
+
+<div class="container-fluid bg-3 text-left">
+  <h3> Findings: An Overview</h3><br>
+</div>
+
+<div class="container-fluid bg-3 text-left">
+  <h3>An Example from Class</h3><br>
+  <p>This section The instructor began the class with a brief overview of technologies students needed to do Sabermetrics- SQL and Python, and a brief overview of basic statistics. After the overview, the instructor introduced questions in Sabermetrics. Here's an example: </p>
+
+  <p><b>"One of the ‘loony’ statistics in <i>What’s Wrong with Traditional Baseball Statistics</i> is called the <i>All American Pitcher (AAP)</i> award, given once in 1910. The formula is: </p>
+  <p>AAP = fielding percentage (FP) + batting average (BA) + winning percentage (WP)</p>
+  <ul>
+    <li>What tables (in the database) do you need to calculate AAP? </li>
+    <li>What are the individual queries to calculate FP, BA, and WP separately? </li>
+    <li> What is the query to calculate AAP for all pitchers in 2016? </li>
+    <li> List three things wrong with the AAP statistic, include examples to support your argument </li>
+    <li> <i>"The All-American Pitcher statistic made more sense in 1910 than it does today."</i> Take a position on this statement and support your position with data."</b></li>
+  </ul>
+
+  <p> I'll share some interesting examples from students' work. </p>
+  <br>
+  <h5> Student 1 </h5>
+  <p> Student 1 answered the question entirely using prior baseball knowledge and did not include any statistical reasoning. He did query the Lahman database the top pitchers in 1910 and 2016 as ranked by the All-American Pitcher statistic, as directed in the assignment I just described. </p>
+  <p> Image here </p>
+
+  <p>But he justified his claim without any mention of his results, using only anecdotal evidence of baseball history:</p>
+
+  <p> The All American Pitcher Award definitely made more sense in 1910 than it does today. A big reason for this is the role of pitcher today compared to 1910. One thing to note is that most of the pitchers in the top ten for AAP in 2016 are relief pitchers. This is something that did not even exist in 1910. During that time, pitchers were much more all-around players. Teams usually only had one pitcher who would pitch every game. This also meant that pitchers were hitting a lot more than they do today (as can be seen by the number of hits by pitchers in 1910 compared to those in 2016). Thus it would make sense to include batting average in a statistic that measured pitchers.
+
+Today however, pitchers have one main job, and that is to pitch. If they are in the NL, they will sometimes be required to hit, but most don’t hit well. Most relief pitchers don’t even hit! Thus, in today’s game this statistic makes much less sense. This can be seen by the fact that the majority of the players that came up in the 2016 AAP are not big name players that one would think of when thinking of the best pitchers in the game.”
+
+</div>
+
+<div class="container-fluid bg-3 text-left">
+  <h3> Sabermetrics Terminology</h3><br>
+  <p> (Coming Soon) </p>
+</div>
+
+
+<footer class="container-fluid text-center">
+  <p></p>
+</footer>
+
+</body>
+</html>
